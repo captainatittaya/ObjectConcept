@@ -1,16 +1,16 @@
 package th.ac.npru.swe.atittaya.oop;
 
 public class Ractangle extends Shape {
-	int length;
-	int width;
+	private int length;
+	private int width;
 	
-	Ractangle(int lengthValue,int widthValue){
+	public Ractangle(int lengthValue,int widthValue){
 		length = lengthValue;
 		width = widthValue;
 	}
 	
 	@Override
-	double getArea() {
+	public double getArea() {
 		area = length * width;
 		return area;
 	}
